@@ -48,23 +48,39 @@
             </div>
         </nav>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 banner-info">
-                    <p class="small-text">#SpiritOfLearning</p>
-                    <h1 class="big-text">Your Dream Career Starts With Us</h1>
-                    <p class="small-text-second">Belajar sesuai arahan yang telah disusun baik
-                        oleh expert & komunitas yang supportive</p>
-                    <a class="btn btn-first" href="#">Alur Belajar</a>
-                    <a class="btn btn-second" href="#">Panduan Karir</a>
-                    <img class="img-responsive img-companies" src="asset/companies-x-bwa.svg.png" alt="">
-                </div>
-                <div class="col-sm-6 banner-img">
-                    <img src="asset/main_img.png" class="img-responsive" alt="">
+        <div class="account-page">
+            <div class="container">
+                <div class="row row-no-gutters">
+                    <div class="col-sm-6">
+                        <img src="asset/belajar-coding-product-design-kelas-online-buildwith-angga.png" width="100%">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">Login</span>
+                                <span onclick="register()">Register</span>
+                                <hr id="indicator">
+                            </div>
+
+                            <form id="loginForm">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Login</button>
+                                <a href="">Forgot password</a>
+                            </form>
+
+                            <form id="registerForm">
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Register</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
         
     </header>
 
