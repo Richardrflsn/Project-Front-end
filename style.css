@@ -76,6 +76,7 @@ li a{
 
     width: 80px;
     height: 45px;
+    margin-top: 5px;
 }
 
 .btn-daftar{
@@ -85,6 +86,7 @@ li a{
     width: 160px;
     height: 49px;
     background: #E5E9F2;
+    margin-top: 5px;
 }
 
 .right-menu{
@@ -100,6 +102,78 @@ li a{
 .nav-item a:hover{
     text-decoration: none;
     box-shadow: none;
+    border: none;
     color: #335EF7;
     transition: ease-in .2s;
+}
+
+button.btn-daftar:hover{
+    background-image: none;
+    border: none;
+    color: #34364A;
+    box-shadow: 0 5px 10px #E5E9F2;
+    transition: 0.3s;
+}
+
+/* Dashboard */
+.small-text{
+    font-size: 18px;
+    color: #47BB8E;
+    margin: 20px 0;
+    font-weight: 550;
+}
+
+.big-text{
+    font-size: 46px;
+    color: #34364A;
+    margin: 20px 0;
+    font-weight: 670;
+}
+
+.small-text-second{
+    font-size: 18px;
+    color: #34364A;
+    margin: 20px 0;
+}
+
+a.btn{
+    margin: 30px 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+a.btn-first{
+    background-color: #2447F9;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+a.btn-second{
+    background-color: #E5E9F2;
+    color: #34364A;
+    font-weight: 600;
+}
+
+a.btn-first:hover{
+    border: none;
+    color: #FFFFFF;
+    box-shadow: 0 0 8px #2447F9;
+    transition: 0.3s;
+}
+
+a.btn-second:hover{
+    border: none;
+    color: #34364A;
+    box-shadow: 0 5px 10px #E5E9F2;
+    transition: 0.3s;
+}
+
+img.img-companies{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 30px;
+    width: 100%;
+    left: 100px;
 }
