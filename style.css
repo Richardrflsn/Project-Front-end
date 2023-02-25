@@ -17,6 +17,7 @@
 }
 
 .navbar-style{
+    position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 50px;
@@ -61,8 +62,17 @@ ul nav{
     flex-direction: row;
 }
 
-li a{
+a.nav-btn{
     color: #34364A;
+    text-decoration: none;
+    box-shadow: none;
+    border: none;
+    margin: 20px 20px 20px;
+}
+
+a.nav-btn:hover{
+    color: #335EF7;
+    transition: ease-in .2s;
 }
 
 .btn-secondary, .btn-secondary:hover {
@@ -97,14 +107,6 @@ li a{
 
 .ms-auto{
     margin-left: auto;
-}
-
-.nav-item a:hover{
-    text-decoration: none;
-    box-shadow: none;
-    border: none;
-    color: #335EF7;
-    transition: ease-in .2s;
 }
 
 button.btn-daftar:hover{
@@ -177,3 +179,9 @@ img.img-companies{
     width: 100%;
     left: 100px;
 }
+
+.banner-info, .banner-img{
+    margin: 30px 0;
+}
+
+/* Login style */
