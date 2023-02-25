@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+body{
     background: #F6F8FD;
 }
 
@@ -81,13 +84,22 @@ a.nav-btn:hover{
 }
 
 .btn-secondary{
+    background: #E5E9F2;
+    border-radius: 100px;
+    width: 100%;
     border: none;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+    font-size: 30px;
 
-    width: 80px;
-    height: 45px;
-    margin-top: 5px;
+    width: 49px;
+    height: 49px;
+}
+
+.btn-daftar, .btn-secondary{
+    margin-left: 20px;
 }
 
 .btn-daftar{
