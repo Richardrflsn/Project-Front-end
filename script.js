@@ -1,3 +1,18 @@
+// Navbar
+window.onscroll = function() {myFunction()};
+
+var navbar = document.querySelector(".navbar-style");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+    } else {
+    navbar.classList.remove("sticky");
+    }
+}
+
 // Popup login
 document.querySelector("#show-login").addEventListener("click", function(){
     document.querySelector(".popup").classList.add("active");

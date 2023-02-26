@@ -13,6 +13,7 @@ body{
 #header{
     height: 100vh;
     cursor: auto;
+    position: sticky;
 }
 
 .navbar-header .navbar-collapse{
@@ -21,7 +22,10 @@ body{
 }
 
 .navbar-style{
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 50px;
@@ -30,6 +34,14 @@ body{
     margin-left: auto;
     margin-right: auto;
     background: #F6F8FD;
+    transition: all 0.3s ease;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0. 0.2);
 }
 
 ul nav{
@@ -210,6 +222,7 @@ img.img-companies{
 
 .banner-info, .banner-img{
     margin: 30px 0;
+    top: 70px;
 }
 
 /* popup login */
@@ -317,7 +330,6 @@ img.img-companies{
 /* Footer Styles */
 .footer-nd {
     background-color: #F6F8FD;
-
     color: #34364A;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
