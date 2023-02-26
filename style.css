@@ -51,9 +51,10 @@ ul nav{
 }
 
 .nav-item{
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
-    justify-content: center;
     display: flex;
     margin-right: 0;
     font-weight: 550;
@@ -67,16 +68,26 @@ ul nav{
 }
 
 a.nav-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #34364A;
     text-decoration: none;
     box-shadow: none;
     border: none;
-    margin: 20px 20px 20px;
+    margin: 20px 20px 0;
 }
 
 a.nav-btn:hover{
     color: #335EF7;
     transition: ease-in .2s;
+}
+
+.nav-btn-special, .icon-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
 }
 
 .btn-secondary, .btn-secondary:hover {
@@ -128,6 +139,10 @@ button.btn-daftar:hover{
     color: #34364A;
     box-shadow: 0 5px 10px #E5E9F2;
     transition: 0.3s;
+}
+
+a.wrap-btn-daftar:hover{
+    text-decoration: none;
 }
 
 /* Dashboard */
@@ -197,82 +212,94 @@ img.img-companies{
     margin: 30px 0;
 }
 
-/* Login style */
-.account-page{
-    padding: 50px 0;
-    background: #F6F8FD;
-}
-
-.form-container{
-    background: #FFFFFF;
-    width: 300px;
-    height: 400px;
-    position: relative;
-    text-align: center;
-    padding: 20px 0;
-    margin: auto;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
-    overflow: hidden;
-}
-
-.form-container span{
-    font-weight: bold;
-    padding: 0 10px;
-    color: #555;
-    cursor: pointer;
-    width: 100px;
-    display: inline-block;
-}
-
-.form-btn{
-    display: inline-block;
-}
-
-.form-container form{
-    max-width: 300px;
-    padding: 0 20px;
+/* popup login */
+.popup{
     position: absolute;
-    top: 130px;
-    transition: transform 1s;
+    top: -300%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 300px;
+    padding: 20px 30px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 5px 5px #E5E9F2;
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
 }
 
-form input{
-    width: 100%;
-    height: 30px;
-    margin: 10px 0;
-    padding: 0 10px;
-    border: 1px solid #ccc;
+.popup.active{
+    top: 300%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
 }
 
-form .btn{
-    width: 100%;
-    border: none;
+.popup .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #E5E9F2;
+    color: #34364A;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
     cursor: pointer;
-    margin: 10px 0;
 }
 
-form .btn:focus{
+.popup .form h2{
+    text-align: center;
+    color: #34364A;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+
+.popup .form .form-element{
+    margin: 15px 0px;
+}
+
+.popup .form .form-element label{
+    font-size: 14px;
+    color: #34364A;
+}
+
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="password"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
     outline: none;
+    border: 1px solid #E5E9F2;
+    border-radius: 5px;
 }
 
-#loginForm{
-    left: -300px;
+.popup .form .form-element input[type="checkbox"]{
+    margin-right: 5px;
 }
 
-#registerForm{
-    left: 0;
-}
-
-form a{
-    font-size: 12px;
-}
-
-#indicator{
-    width: 100px;
+.popup .form .form-element button{
+    width: 100%;
+    height: 40px;
     border: none;
-    background: #2447F9;
-    height: 3px;
-    margin-top: 8px;
-    transform: translateX(100px);
-    transition: transform 1s;
+    outline: none;
+    font-size: 15px;
+    background: #E5E9F2;
+    color: #34364A;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popup .form .form-element a{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #335EF7;
+    text-decoration: none;
+    font-weight: 600;
 }
