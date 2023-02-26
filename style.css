@@ -189,24 +189,26 @@ a.btn-first{
     background-color: #2447F9;
     color: #FFFFFF;
     font-weight: 600;
+    font-size: 16px;
 }
 
 a.btn-second{
     background-color: #E5E9F2;
     color: #34364A;
     font-weight: 600;
+    font-size: 16px;
 }
 
 a.btn-first:hover{
-    border: none;
     color: #FFFFFF;
+    background-color: #2447F9;
     box-shadow: 0 0 8px #2447F9;
     transition: 0.3s;
 }
 
 a.btn-second:hover{
-    border: none;
     color: #34364A;
+    background-color: #E5E9F2;
     box-shadow: 0 5px 10px #E5E9F2;
     transition: 0.3s;
 }
@@ -325,6 +327,89 @@ img.img-companies{
 .popup .form #email_error,
 .popup .form #pass_error{
     color: #C62828;
+}
+
+/* Feature */
+.text-support{
+    position: relative;
+    justify-content: flex-start;
+    padding: 80px 20px 0px;
+    margin: 20px 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* or 150% */
+    
+    display: flex;
+    align-items: flex-start;
+    
+    color: #47BB8E;
+}
+
+.header-primary{
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 20px 20px;
+    margin: 20px 20px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.course-card-responsive .thumbnail-course{
+    border-radius: 16px;
+    max-height: 210px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.course-card-responsive .course-detail .course-name {
+    color: #34364a;
+    font-size: 20px;
+    font-weight: 700!important;
+    line-height: 30px;
+    min-height: 60px;
+    z-index: 80!important;
+}
+
+.course-name h2{
+    text-decoration: none;
+}
+
+.course-card-responsive .roadmap-tools img {
+    height: 36px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.stack-card-group .stack-card-ornament {
+    background: #fff;
+    border-radius: 14px;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.card-container, .course-card, .course-card-responsive {
+    background: #fff;
+    border: none;
+    border-radius: 14px;
+    box-sizing: border-box;
+    color: #34364a;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+    position: relative;
+    row-gap: 24px;
+}
+
+.course-card-responsive .roadmap-tools img {
+    height: 36px;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 /* Footer Styles */
