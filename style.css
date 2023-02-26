@@ -309,6 +309,11 @@ img.img-companies{
     font-weight: 600;
 }
 
+.popup .form #email_error,
+.popup .form #pass_error{
+    color: #C62828;
+}
+
 /* Footer Styles */
 .footer-nd {
     background-color: #F6F8FD;
